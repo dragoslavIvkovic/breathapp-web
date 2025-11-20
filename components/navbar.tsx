@@ -5,8 +5,6 @@ import { Button } from "@/components/ui/button"
 import { Flower2, Menu, X } from "lucide-react"
 import Link from "next/link"
 
-import { siteConfig } from "@/lib/site-config"
-
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -19,6 +17,14 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
+  const navLinks = [
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Features", href: "#features" },
+    { name: "Screenshots", href: "#screenshots" },
+    { name: "Reviews", href: "#reviews" },
+  ]
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -26,14 +32,14 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 group">
+        <Link href="#" className="flex items-center gap-2 group">
           <Flower2 className="w-8 h-8 text-primary group-hover:rotate-45 transition-transform duration-500" />
-          <span className="text-2xl font-bold text-accent">{siteConfig.name}</span>
+          <span className="text-2xl font-bold text-accent">Breath</span>
         </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
-          {siteConfig.navItems.map((link) => (
+          {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
@@ -56,7 +62,7 @@ export function Navbar() {
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div className="absolute top-full left-0 right-0 bg-surface border-t border-primary/10 p-4 md:hidden flex flex-col gap-4 shadow-xl">
-          {siteConfig.navItems.map((link) => (
+          {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}

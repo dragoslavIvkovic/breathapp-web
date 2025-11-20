@@ -1,36 +1,16 @@
 import { Navbar } from "@/components/navbar"
 import { PhoneMockup } from "@/components/phone-mockup"
 import { StatsSection } from "@/components/stats-section"
-import { FeatureSection } from "@/components/feature-section"
+import { ProgressChart } from "@/components/progress-chart" // Importing new component
 import { PricingSection } from "@/components/pricing-section"
 import { ScreenshotSlider } from "@/components/screenshot-slider"
+import { TestimonialsSection } from "@/components/testimonials-section" // Importing new component
 import { Wind, Sparkles, Apple, PlayCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { siteConfig } from "@/lib/site-config"
 
 export default function Home() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: "Breath",
-    operatingSystem: "iOS, Android",
-    applicationCategory: "HealthApplication",
-    ratingValue: "4.9",
-    ratingCount: "12000",
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-    },
-    description: "Master the art of breathwork with our guided exercises.",
-  }
-
   return (
     <main className="min-h-screen bg-background text-white selection:bg-accent selection:text-white overflow-x-hidden">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
       <Navbar />
 
       {/* Hero Section */}
@@ -101,9 +81,11 @@ export default function Home() {
 
       <StatsSection />
 
-      <FeatureSection />
+      <ProgressChart />
 
       <ScreenshotSlider />
+
+      <TestimonialsSection />
 
       <PricingSection />
 
@@ -137,17 +119,17 @@ export default function Home() {
               <span className="text-xl font-bold text-white">Breath</span>
             </div>
             <div className="flex gap-8 text-white/60 text-sm">
-              <a href={siteConfig.links.privacy} className="hover:text-accent transition-colors">
+              <a href="#" className="hover:text-accent transition-colors">
                 Privacy
               </a>
-              <a href={siteConfig.links.terms} className="hover:text-accent transition-colors">
+              <a href="#" className="hover:text-accent transition-colors">
                 Terms
               </a>
-              <a href={siteConfig.links.support} className="hover:text-accent transition-colors">
+              <a href="#" className="hover:text-accent transition-colors">
                 Support
               </a>
             </div>
-            <div className="text-white/40 text-sm">© 2025 {siteConfig.name}. All rights reserved.</div>
+            <div className="text-white/40 text-sm">© 2025 Breath App. All rights reserved.</div>
           </div>
         </div>
       </footer>
