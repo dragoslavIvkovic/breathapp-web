@@ -8,8 +8,28 @@ import { Wind, Sparkles, Apple, PlayCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "Breath",
+    operatingSystem: "iOS, Android",
+    applicationCategory: "HealthApplication",
+    ratingValue: "4.9",
+    ratingCount: "12000",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+    description: "Master the art of breathwork with our guided exercises.",
+  }
+
   return (
     <main className="min-h-screen bg-background text-white selection:bg-accent selection:text-white overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navbar />
 
       {/* Hero Section */}
