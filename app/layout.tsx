@@ -5,9 +5,12 @@ import "./globals.css"
 
 import { siteConfig } from "@/lib/site-config"
 
+import { CookieBanner } from "@/components/cookie-banner"
+
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: siteConfig.name,
     template: `%s | ${siteConfig.name}`,
@@ -51,7 +54,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <CookieBanner />
+      </body>
     </html>
   )
 }
