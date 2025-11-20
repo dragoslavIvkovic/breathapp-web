@@ -3,36 +3,29 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 
+import { siteConfig } from "@/lib/site-config"
+
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Breath - Find Your Inner Peace | #1 Breathing & Meditation App",
-  description:
-    "Master the art of breathwork with Breath. The #1 Apple mobile app for relaxing breath, focus meditation, and stress reduction. Download now for a calmer mind.",
-  keywords: [
-    "breathing app",
-    "meditation",
-    "focus",
-    "relaxation",
-    "apple mobile app",
-    "breathwork",
-    "health",
-    "fitness",
-    "anxiety relief",
-    "sleep aid",
-  ],
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
   generator: "v0.app",
   openGraph: {
-    title: "Breath - Find Your Inner Peace",
-    description: "The #1 App for Breathing Exercises, Meditation, and Relaxation.",
-    url: "https://breath-app.com",
-    siteName: "Breath App",
+    title: siteConfig.name,
+    description: siteConfig.description,
+    url: siteConfig.url,
+    siteName: siteConfig.name,
     images: [
       {
-        url: "/og-image.png",
+        url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: "Breath App Preview",
+        alt: `${siteConfig.name} Preview`,
       },
     ],
     locale: "en_US",
@@ -40,13 +33,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Breath - Find Your Inner Peace",
-    description: "The #1 App for Breathing Exercises, Meditation, and Relaxation.",
-    images: ["/og-image.png"],
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [siteConfig.ogImage],
   },
   appleWebApp: {
     capable: true,
-    title: "Breath",
+    title: siteConfig.name,
     statusBarStyle: "black-translucent",
   },
 }

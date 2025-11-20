@@ -6,6 +6,7 @@ import { PricingSection } from "@/components/pricing-section"
 import { ScreenshotSlider } from "@/components/screenshot-slider"
 import { Wind, Sparkles, Apple, PlayCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { siteConfig } from "@/lib/site-config"
 
 export default function Home() {
   const jsonLd = {
@@ -136,17 +137,17 @@ export default function Home() {
               <span className="text-xl font-bold text-white">Breath</span>
             </div>
             <div className="flex gap-8 text-white/60 text-sm">
-              <a href="#" className="hover:text-accent transition-colors">
+              <a href={siteConfig.links.privacy} className="hover:text-accent transition-colors">
                 Privacy
               </a>
-              <a href="#" className="hover:text-accent transition-colors">
+              <a href={siteConfig.links.terms} className="hover:text-accent transition-colors">
                 Terms
               </a>
-              <a href="#" className="hover:text-accent transition-colors">
+              <a href={siteConfig.links.support} className="hover:text-accent transition-colors">
                 Support
               </a>
             </div>
-            <div className="text-white/40 text-sm">© 2025 Breath App. All rights reserved.</div>
+            <div className="text-white/40 text-sm">© 2025 {siteConfig.name}. All rights reserved.</div>
           </div>
         </div>
       </footer>
