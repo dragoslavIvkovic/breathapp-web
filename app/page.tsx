@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/navbar"
+
 import { PhoneMockup } from "@/components/phone-mockup"
 import { StatsSection } from "@/components/stats-section"
 import { ProgressChart } from "@/components/progress-chart" // Importing new component
@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button"
 export default function Home() {
   return (
     <main className="min-h-screen bg-background text-white selection:bg-accent selection:text-white overflow-x-hidden">
-      <Navbar />
+
 
       {/* Hero Section */}
       <section id="home" className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
@@ -108,31 +108,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-surface py-12 border-t border-white/5">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-primary to-secondary flex items-center justify-center">
-                <Wind className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-bold text-white">Breath</span>
-            </div>
-            <div className="flex gap-8 text-white/60 text-sm">
-              <a href="#" className="hover:text-accent transition-colors">
-                Privacy
-              </a>
-              <a href="#" className="hover:text-accent transition-colors">
-                Terms
-              </a>
-              <a href="#" className="hover:text-accent transition-colors">
-                Support
-              </a>
-            </div>
-            <div className="text-white/40 text-sm">© 2025 Breath App. All rights reserved.</div>
-          </div>
-        </div>
-      </footer>
+
     </main>
   )
 }

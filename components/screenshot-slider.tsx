@@ -47,7 +47,7 @@ export function ScreenshotSlider() {
   }
 
   return (
-    <section className="py-20 overflow-hidden bg-gradient-to-b from-background to-surface/20">
+    <section id="screenshots" className="py-20 overflow-hidden bg-gradient-to-b from-background to-surface/20">
       <div className="container mx-auto px-4 text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-accent mb-4">App Interface</h2>
         <p className="text-white/80">Simple, intuitive, and beautiful design.</p>

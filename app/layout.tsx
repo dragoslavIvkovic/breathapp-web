@@ -6,6 +6,8 @@ import "./globals.css"
 import { siteConfig } from "@/lib/site-config"
 
 import { CookieBanner } from "@/components/cookie-banner"
+import { Navbar } from "@/components/navbar"
+import { Footer } from "@/components/footer"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -55,8 +57,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
+        <Navbar />
         {children}
         <CookieBanner />
+        <Footer />
       </body>
     </html>
   )

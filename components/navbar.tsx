@@ -18,11 +18,11 @@ export function Navbar() {
   }, [])
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Features", href: "#features" },
-    { name: "Screenshots", href: "#screenshots" },
-    { name: "Reviews", href: "#reviews" },
+    { name: "Home", href: "/#home" },
+    { name: "About", href: "/#about" },
+    { name: "Features", href: "/#features" },
+    { name: "Screenshots", href: "/#screenshots" },
+    { name: "Reviews", href: "/#reviews" },
   ]
 
   return (
@@ -32,7 +32,7 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
-        <Link href="#" className="flex items-center gap-2 group">
+        <Link href="/" className="flex items-center gap-2 group">
           <Flower2 className="w-8 h-8 text-primary group-hover:rotate-45 transition-transform duration-500" />
           <span className="text-2xl font-bold text-accent">Breath</span>
         </Link>
