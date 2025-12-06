@@ -19,8 +19,8 @@ export const siteConfig = {
   links: {
     appStore: "#",
     googlePlay: "#",
-    privacy: "#",
-    terms: "#",
+    privacy: "/privacy",
+    terms: "/terms",
     support: "#",
     twitter: "https://twitter.com/breathapp", // Placeholder
   },
