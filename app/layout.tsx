@@ -57,6 +57,28 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "MobileApplication",
+              name: siteConfig.name,
+              operatingSystem: "iOS",
+              applicationCategory: "HealthApplication",
+              description: siteConfig.description,
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "USD",
+              },
+              author: {
+                "@type": "Organization",
+                name: siteConfig.creator,
+              },
+            }),
+          }}
+        />
         <Navbar />
         {children}
         <CookieBanner />

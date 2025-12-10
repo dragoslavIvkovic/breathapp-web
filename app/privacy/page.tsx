@@ -93,6 +93,15 @@ export default function PrivacyPage() {
             </div>
 
             <div>
+              <h3 className="text-lg font-medium text-foreground">Sentry:</h3>
+              <p>
+                We use Sentry for error tracking and monitoring to identify and fix bugs in real-time. Sentry collects data related to errors and crashes to help us improve the App's stability and performance.
+                <br />
+                You can view their privacy policy here: <a href="https://sentry.io/privacy/" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">https://sentry.io/privacy/</a>
+              </p>
+            </div>
+
+            <div>
               <h3 className="text-lg font-medium text-foreground">Apple:</h3>
               <p>
                 As the App is distributed via the Apple App Store, Apple may collect and process data in accordance with its own privacy policy and terms. Please refer to Apple’s documentation for details.
