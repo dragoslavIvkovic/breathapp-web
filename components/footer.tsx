@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Wind } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -7,10 +7,14 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-linear-to-tr from-primary to-secondary flex items-center justify-center">
-              <Wind className="w-5 h-5 text-white" />
-            </div>
-            <span className="text-xl font-bold text-white">Breath</span>
+            <Image 
+              src="/icon.png" 
+              alt="Daily Breath" 
+              width={32} 
+              height={32} 
+              className="rounded-lg"
+            />
+            <span className="text-xl font-bold text-white">Daily Breath</span>
           </div>
           <div className="flex gap-8 text-white/60 text-sm">
             <Link href="/privacy" className="hover:text-accent transition-colors">
@@ -23,7 +27,7 @@ export function Footer() {
               Support
             </Link>
           </div>
-          <div className="text-white/40 text-sm">© {new Date().getFullYear()} Breath App. All rights reserved.</div>
+          <div className="text-white/40 text-sm">© {new Date().getFullYear()} Daily Breath. All rights reserved.</div>
         </div>
       </div>
     </footer>

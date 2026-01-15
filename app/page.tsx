@@ -5,8 +5,10 @@ import { ProgressChart } from "@/components/progress-chart" // Importing new com
 import { PricingSection } from "@/components/pricing-section"
 import { ScreenshotSlider } from "@/components/screenshot-slider"
 import { TestimonialsSection } from "@/components/testimonials-section" // Importing new component
-import { Wind, Sparkles, Apple, PlayCircle } from "lucide-react"
+import { Wind, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
+import { STORE_LINKS, STORE_BADGES } from "@/lib/links"
 
 export default function Home() {
   return (
@@ -26,30 +28,49 @@ export default function Home() {
             <div className="flex-1 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface/50 border border-white/10 backdrop-blur-sm mb-8 animate-fade-in">
                 <Sparkles className="w-4 h-4 text-accent" />
-                <span className="text-sm font-medium text-white/90">#1 Health & Fitness App</span>
+                <span className="text-sm font-medium text-white/90">Pulse: Guided Breathing</span>
               </div>
 
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6 tracking-tight">
-                Find Your <br />
+                Take a <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-                  Inner Peace
+                  Deep Breath
                 </span>
               </h1>
 
               <p className="text-xl text-white/70 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                Master the art of breathwork with our guided exercises. Reduce stress, improve sleep, and increase focus
-                in just 5 minutes a day.
+                Your pocket-sized sanctuary for breathwork. Regulate your nervous system, silence racing thoughts, 
+                and rebuild your mindset in just 3 minutes a day.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                <Button className="w-full sm:w-auto px-8 py-6 bg-primary hover:bg-primary/90 text-background font-bold rounded-full transition-all transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg shadow-primary/25 text-lg">
-                  <Apple className="w-6 h-6" />
-                  App Store
-                </Button>
-                <Button className="w-full sm:w-auto px-8 py-6 bg-surface/50 hover:bg-surface text-white font-semibold rounded-full border border-white/10 backdrop-blur-sm transition-all flex items-center justify-center gap-2 text-lg">
-                  <PlayCircle className="w-6 h-6" />
-                  Google Play
-                </Button>
+                <a 
+                  href={STORE_LINKS.appStore} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="transition-transform hover:scale-105"
+                >
+                  <Image 
+                    src={STORE_BADGES.appStore} 
+                    alt="Download on the App Store" 
+                    width={140} 
+                    height={47}
+                    priority
+                  />
+                </a>
+                <a 
+                  href={STORE_LINKS.googlePlay} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="transition-transform hover:scale-105"
+                >
+                  <Image 
+                    src={STORE_BADGES.googlePlay} 
+                    alt="Get it on Google Play" 
+                    width={140} 
+                    height={47}
+                  />
+                </a>
               </div>
 
               <div className="mt-12 flex items-center justify-center lg:justify-start gap-8 text-white/50">
@@ -93,17 +114,38 @@ export default function Home() {
       <section id="download" className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-background to-surface/50" />
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Ready to breathe better?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Start Your Journey Today</h2>
           <p className="text-xl text-white/70 mb-10 max-w-2xl mx-auto">
-            Download Breath today and start your journey towards a calmer, more focused mind.
+            You are one breath away from a calmer, clearer, and more confident version of yourself. 
+            Download Daily Breath and transform simple breathing into your most effective tool.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button className="px-8 py-6 bg-accent hover:bg-accent/90 text-white font-bold rounded-full transition-all shadow-lg shadow-accent/25 min-w-[200px] text-lg">
-              App Store
-            </Button>
-            <Button className="px-8 py-6 bg-transparent border-2 border-white/20 hover:bg-white/10 text-white font-bold rounded-full transition-all min-w-[200px] text-lg">
-              Google Play
-            </Button>
+            <a 
+              href={STORE_LINKS.appStore} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="transition-transform hover:scale-105"
+            >
+              <Image 
+                src={STORE_BADGES.appStore} 
+                alt="Download on the App Store" 
+                width={140} 
+                height={47}
+              />
+            </a>
+            <a 
+              href={STORE_LINKS.googlePlay} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="transition-transform hover:scale-105"
+            >
+              <Image 
+                src={STORE_BADGES.googlePlay} 
+                alt="Get it on Google Play" 
+                width={140} 
+                height={47}
+              />
+            </a>
           </div>
         </div>
       </section>

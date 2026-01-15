@@ -1,28 +1,36 @@
+import { STORE_LINKS } from './links';
+
 export const siteConfig = {
-  name: "Breath",
+  name: "Daily Breath",
+  tagline: "Pulse: Guided Breathing",
   url: "https://breath-app.com",
   ogImage: "/og-image.png",
   description:
-    "Master the art of breathwork with Breath. The #1 Apple mobile app for relaxing breath, focus meditation, and stress reduction. Download now for a calmer mind.",
+    "Take a deep breath. Daily Breath is your pocket-sized sanctuary for breathwork, anxiety relief, better sleep, and mental clarity. Combine ancient breathing techniques with positive affirmations in just 3 minutes a day.",
   keywords: [
-    "breathing app",
-    "meditation",
-    "focus",
-    "relaxation",
-    "apple mobile app",
-    "breathwork",
-    "health",
-    "fitness",
+    "breathing",
+    "breath",
+    "breathing exercises",
+    "daily breathing",
     "anxiety relief",
-    "sleep aid",
+    "sleep",
+    "calm",
+    "meditation",
+    "stress",
+    "breathwork",
+    "guided breathing",
+    "relaxation",
+    "mindfulness",
+    "nervous system",
+    "somatic healing",
   ],
   links: {
-    appStore: "#",
-    googlePlay: "#",
+    appStore: STORE_LINKS.appStore,
+    googlePlay: STORE_LINKS.googlePlay,
     privacy: "/privacy",
     terms: "/terms",
-    support: "#",
-    twitter: "https://twitter.com/breathapp", // Placeholder
+    termsOfUse: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    support: "mailto:support@breath-app.com",
   },
   navItems: [
     { name: "Home", href: "#home" },
@@ -31,5 +39,5 @@ export const siteConfig = {
     { name: "Screenshots", href: "#screenshots" },
     { name: "Reviews", href: "#reviews" },
   ],
-  creator: "Breath Team",
+  creator: "Daily Breath Team",
 }

@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Flower2, Menu, X } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
+import { STORE_LINKS } from "@/lib/links"
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -33,8 +35,14 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
-          <Flower2 className="w-8 h-8 text-primary group-hover:rotate-45 transition-transform duration-500" />
-          <span className="text-2xl font-bold text-accent">Breath</span>
+          <Image 
+            src="/icon.png" 
+            alt="Daily Breath" 
+            width={40} 
+            height={40} 
+            className="rounded-lg group-hover:scale-105 transition-transform"
+          />
+          <span className="text-2xl font-bold text-accent">Daily Breath</span>
         </Link>
 
         {/* Desktop Menu */}
@@ -48,9 +56,11 @@ export function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Button className="bg-primary text-background hover:bg-primary/90 rounded-full font-bold">
-            Download Now
-          </Button>
+          <a href={STORE_LINKS.appStore} target="_blank" rel="noopener noreferrer">
+            <Button className="bg-primary text-background hover:bg-primary/90 rounded-full font-bold">
+              Download Now
+            </Button>
+          </a>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -72,9 +82,11 @@ export function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Button className="bg-primary text-background hover:bg-primary/90 rounded-full font-bold w-full">
-            Download Now
-          </Button>
+          <a href={STORE_LINKS.appStore} target="_blank" rel="noopener noreferrer">
+            <Button className="bg-primary text-background hover:bg-primary/90 rounded-full font-bold w-full">
+              Download Now
+            </Button>
+          </a>
         </div>
       )}
     </nav>
