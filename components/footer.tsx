@@ -9,12 +9,12 @@ export function Footer() {
           <div className="flex items-center gap-2">
             <Image 
               src="/icon.png" 
-              alt="Pulse" 
+              alt="Pulse: Guided Breathing" 
               width={32} 
               height={32} 
               className="rounded-lg"
             />
-            <span className="text-xl font-bold text-white">Pulse</span>
+            <span className="text-xl font-bold text-white">Pulse: Guided Breathing</span>
           </div>
           <div className="flex gap-8 text-white/60 text-sm">
             <Link href="/privacy" className="hover:text-accent transition-colors">
@@ -27,7 +27,7 @@ export function Footer() {
               Support
             </Link>
           </div>
-          <div className="text-white/40 text-sm">© {new Date().getFullYear()} Pulse. All rights reserved.</div>
+          <div className="text-white/40 text-sm">© {new Date().getFullYear()} Pulse: Guided Breathing. All rights reserved.</div>
         </div>
       </div>
     </footer>

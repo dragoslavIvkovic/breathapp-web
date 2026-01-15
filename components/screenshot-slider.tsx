@@ -6,10 +6,12 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const screenshots = [
-  "/images/welcome-screen.png",
-  "/images/goals-screen.png",
-  "/images/welcome-screen.png", // Repeating for demo since we only have 2 images generated
-  "/images/goals-screen.png",
+  "/images/welcome-screen.webp",
+  "/images/goals-screen.webp",
+  "/images/home-screen.webp",
+  "/images/patterns-screen.webp",
+  "/images/session-start-screen.webp",
+  "/images/inhale-screen.webp",
 ]
 
 export function ScreenshotSlider() {

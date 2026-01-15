@@ -92,7 +92,7 @@ export default function Home() {
 
             <div className="flex-1 relative w-full max-w-[300px] lg:max-w-md mx-auto">
               <div className="relative z-10 transform rotate-[-5deg] hover:rotate-0 transition-transform duration-500">
-                <PhoneMockup image="/images/welcome-screen.png" />
+                <PhoneMockup image="/images/welcome-screen.webp" />
               </div>
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-primary/20 to-accent/20 rounded-full blur-3xl -z-10" />
             </div>

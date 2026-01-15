@@ -37,12 +37,12 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-2 group">
           <Image 
             src="/icon.png" 
-            alt="Pulse" 
+            alt="Pulse: Guided Breathing" 
             width={40} 
             height={40} 
             className="rounded-lg group-hover:scale-105 transition-transform"
           />
-          <span className="text-2xl font-bold text-accent">Pulse</span>
+          <span className="text-2xl font-bold text-accent">Pulse: Guided Breathing</span>
         </Link>
 
         {/* Desktop Menu */}
