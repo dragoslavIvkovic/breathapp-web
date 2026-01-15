@@ -8,7 +8,7 @@ const testimonials = [
     role: "Yoga Instructor",
     image: "/woman-portrait.png",
     quote:
-      "Breath has completely transformed my morning routine. The guided sessions are incredibly soothing and effective.",
+      "Pulse has completely transformed my morning routine. The guided sessions are incredibly soothing and effective.",
     rating: 5,
   },
   {
@@ -37,7 +37,7 @@ export function TestimonialsSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-accent mb-4">What Our Users Say</h2>
           <p className="text-white/80 max-w-2xl mx-auto">
-            Join thousands of others who have found their inner peace with Breath.
+            Join thousands of others who have found their inner peace with Pulse.
           </p>
         </div>
 

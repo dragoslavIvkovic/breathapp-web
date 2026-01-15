@@ -1,12 +1,12 @@
 import { STORE_LINKS } from './links';
 
 export const siteConfig = {
-  name: "Daily Breath",
-  tagline: "Pulse: Guided Breathing",
+  name: "Pulse: Guided Breathing",
+  tagline: "Your Daily Breathing Companion",
   url: "https://breath-app.com",
   ogImage: "/og-image.png",
   description:
-    "Take a deep breath. Daily Breath is your pocket-sized sanctuary for breathwork, anxiety relief, better sleep, and mental clarity. Combine ancient breathing techniques with positive affirmations in just 3 minutes a day.",
+    "Take a deep breath. Pulse: Guided Breathing is your pocket-sized sanctuary for breathwork, anxiety relief, better sleep, and mental clarity. Combine ancient breathing techniques with positive affirmations in just 3 minutes a day.",
   keywords: [
     "breathing",
     "breath",
@@ -23,6 +23,7 @@ export const siteConfig = {
     "mindfulness",
     "nervous system",
     "somatic healing",
+    "pulse breathing",
   ],
   links: {
     appStore: STORE_LINKS.appStore,
@@ -39,5 +40,5 @@ export const siteConfig = {
     { name: "Screenshots", href: "#screenshots" },
     { name: "Reviews", href: "#reviews" },
   ],
-  creator: "Daily Breath Team",
+  creator: "Pulse Team",
 }

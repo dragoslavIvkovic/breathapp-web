@@ -117,7 +117,7 @@ export default function Home() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Start Your Journey Today</h2>
           <p className="text-xl text-white/70 mb-10 max-w-2xl mx-auto">
             You are one breath away from a calmer, clearer, and more confident version of yourself. 
-            Download Daily Breath and transform simple breathing into your most effective tool.
+            Download Pulse and transform simple breathing into your most effective tool.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a 
