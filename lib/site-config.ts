@@ -2,28 +2,54 @@ import { STORE_LINKS } from './links';
 
 export const siteConfig = {
   name: "Pulse: Guided Breathing",
-  tagline: "Your Daily Breathing Companion",
+  tagline: "Panic Relief & Nervous System Regulation",
   url: "https://breath-app.com",
   ogImage: "/og-image.png",
   description:
-    "Take a deep breath. Pulse: Guided Breathing is your pocket-sized sanctuary for breathwork, anxiety relief, better sleep, and mental clarity. Combine ancient breathing techniques with positive affirmations in just 3 minutes a day.",
+    "Stop panic attacks in 3 minutes with guided breathing exercises. Pulse helps you regulate your nervous system using proven techniques like 4-7-8 breathing, box breathing, and somatic breathwork. Your pocket sanctuary for anxiety relief, better sleep, and mental clarity.",
   keywords: [
-    "breathing",
-    "breath",
+    // Primary high-volume keywords
     "breathing exercises",
-    "daily breathing",
     "anxiety relief",
-    "sleep",
-    "calm",
-    "meditation",
-    "stress",
+    "panic attack help",
+    "panic relief",
+    "stress relief",
+    "sleep aid",
+    "meditation app",
     "breathwork",
     "guided breathing",
-    "relaxation",
+    
+    // Long-tail high-conversion keywords
+    "somatic breathwork",
+    "nervous system regulation",
+    "vagus nerve exercises",
+    "box breathing app",
+    "4-7-8 breathing technique",
+    "navy seal breathing",
+    "panic button app",
+    
+    // Specific techniques
+    "box breathing",
+    "diaphragmatic breathing",
+    "coherent breathing",
+    "resonance breathing",
+    
+    // 2025 trending terms
+    "polyvagal theory exercises",
+    "nasal breathing benefits",
+    "somatic releasing exercises",
+    
+    // Symptom-based keywords
+    "how to stop panic attack",
+    "cant sleep anxiety",
+    "calm racing thoughts",
+    "focus timer",
+    
+    // General wellness
     "mindfulness",
-    "nervous system",
-    "somatic healing",
-    "pulse breathing",
+    "relaxation",
+    "mental clarity",
+    "daily breathing practice",
   ],
   links: {
     appStore: STORE_LINKS.appStore,

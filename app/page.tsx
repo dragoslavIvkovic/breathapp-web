@@ -32,15 +32,16 @@ export default function Home() {
               </div>
 
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6 tracking-tight">
-                Take a <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-                  Deep Breath
+                Stop Panic Attacks. <br />
+                <span className="text-primary">
+                  Just Breathe.
                 </span>
               </h1>
 
               <p className="text-xl text-white/70 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                Your pocket-sized sanctuary for breathwork. Regulate your nervous system, silence racing thoughts, 
-                and rebuild your mindset in just 3 minutes a day.
+                Your pocket sanctuary for somatic breathwork and nervous system regulation. 
+                Master techniques like 4-7-8 breathing and box breathing to calm anxiety, 
+                improve sleep, and find mental clarity in just 3 minutes a day.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
@@ -94,7 +95,7 @@ export default function Home() {
               <div className="relative z-10 transform rotate-[-5deg] hover:rotate-0 transition-transform duration-500">
                 <PhoneMockup image="/images/welcome-screen.webp" />
               </div>
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-primary/20 to-accent/20 rounded-full blur-3xl -z-10" />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-primary/20 rounded-full blur-3xl -z-10" />
             </div>
           </div>
         </div>
@@ -112,12 +113,13 @@ export default function Home() {
 
       {/* CTA Section */}
       <section id="download" className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-background to-surface/50" />
+        <div className="absolute inset-0 bg-background" />
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Start Your Journey Today</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Start Your Breathing Journey Today</h2>
           <p className="text-xl text-white/70 mb-10 max-w-2xl mx-auto">
-            You are one breath away from a calmer, clearer, and more confident version of yourself. 
-            Download Pulse and transform simple breathing into your most effective tool.
+            You&apos;re one breath away from panic relief and nervous system regulation. 
+            Download Pulse and discover how guided breathing exercises can transform stress into calm, 
+            sleepless nights into restful sleep, and racing thoughts into mental clarity.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a 

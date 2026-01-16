@@ -28,7 +28,7 @@ export function StatsSection() {
     <section id="about" className="py-20 bg-surface/30 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-5 pointer-events-none">
-        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-white to-transparent" />
+        <div className="absolute top-0 left-0 w-full h-full bg-white/10" />
       </div>
 
       <div className="container mx-auto px-4">

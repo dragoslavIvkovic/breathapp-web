@@ -19,7 +19,7 @@ export function FeatureSection() {
                 {[40, 65, 45, 80, 55, 70, 60].map((height, i) => (
                   <div key={i} className="w-full bg-surface/50 rounded-t-lg relative group">
                     <div
-                      className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary/50 to-primary rounded-t-lg transition-all duration-500 group-hover:to-accent"
+                      className="absolute bottom-0 left-0 right-0 bg-primary rounded-t-lg transition-all duration-500 group-hover:bg-accent"
                       style={{ height: `${height}%` }}
                     />
                   </div>

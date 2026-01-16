@@ -35,7 +35,7 @@ export function CookieBanner() {
       <div className="container mx-auto max-w-4xl">
         <div className="bg-surface/95 backdrop-blur-md border border-white/10 rounded-2xl p-6 shadow-2xl flex flex-col md:flex-row items-center gap-6 relative overflow-hidden">
           {/* Background Glow */}
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-accent to-secondary" />
+          <div className="absolute top-0 left-0 w-full h-1 bg-primary" />
           
           <div className="flex items-start gap-4 flex-1">
             <div className="p-3 rounded-full bg-primary/10 hidden sm:block">

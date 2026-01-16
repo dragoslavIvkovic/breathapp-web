@@ -1,4 +1,13 @@
+import type { Metadata } from "next"
 import { siteConfig } from "@/lib/site-config"
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: `Learn how ${siteConfig.name} protects your privacy. We collect minimal data to provide breathing exercises for anxiety relief and better sleep. Your wellness journey stays private.`,
+  alternates: {
+    canonical: `${siteConfig.url}/privacy`,
+  },
+}
 
 export default function PrivacyPage() {
   return (

@@ -1,4 +1,13 @@
+import type { Metadata } from "next"
 import { siteConfig } from "@/lib/site-config"
+
+export const metadata: Metadata = {
+  title: "Terms of Use (EULA)",
+  description: `Terms of Use and End User License Agreement for ${siteConfig.name}. Read about subscription terms, medical disclaimers, and usage guidelines for our breathing exercises app.`,
+  alternates: {
+    canonical: `${siteConfig.url}/terms`,
+  },
+}
 
 export default function TermsPage() {
   return (
