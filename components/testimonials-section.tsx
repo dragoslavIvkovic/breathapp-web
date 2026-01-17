@@ -7,6 +7,7 @@ const testimonials = [
     name: "Sarah Jenkins",
     role: "Yoga Instructor",
     image: "/woman-portrait.png",
+    alt: "Sarah Jenkins yoga instructor – Pulse breathing app user testimonial",
     quote:
       "Pulse has completely transformed my morning routine. The guided sessions are incredibly soothing and effective.",
     rating: 5,
@@ -16,6 +17,7 @@ const testimonials = [
     name: "Michael Chen",
     role: "Software Engineer",
     image: "/thoughtful-man-portrait.png",
+    alt: "Michael Chen software engineer – Pulse app stress relief review",
     quote:
       "As someone with high stress, seeing my cortisol levels drop on the chart keeps me motivated. Highly recommended!",
     rating: 5,
@@ -25,6 +27,7 @@ const testimonials = [
     name: "Elena Rodriguez",
     role: "Professional Athlete",
     image: "/athlete-portrait.png",
+    alt: "Elena Rodriguez professional athlete – Pulse focus breathing testimonial",
     quote: "Focus is key in my sport. The specific exercises for concentration have given me a competitive edge.",
     rating: 5,
   },
@@ -51,7 +54,7 @@ export function TestimonialsSection() {
                 <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-primary">
                   <Image
                     src={testimonial.image || "/placeholder.svg"}
-                    alt={testimonial.name}
+                    alt={testimonial.alt}
                     fill
                     className="object-cover"
                   />

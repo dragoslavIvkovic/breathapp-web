@@ -6,12 +6,12 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const screenshots = [
-  "/images/welcome-screen.webp",
-  "/images/goals-screen.webp",
-  "/images/home-screen.webp",
-  "/images/patterns-screen.webp",
-  "/images/session-start-screen.webp",
-  "/images/inhale-screen.webp",
+  { src: "/images/welcome-screen.webp", alt: "Pulse breathing app welcome screen – iOS guided breathing meditation" },
+  { src: "/images/goals-screen.webp", alt: "Pulse app goal selection – customize your breathing practice on iOS" },
+  { src: "/images/home-screen.webp", alt: "Pulse breathing app home screen – daily breathing exercises dashboard" },
+  { src: "/images/patterns-screen.webp", alt: "Pulse app breathing patterns – 4-7-8 box breathing techniques for iOS" },
+  { src: "/images/session-start-screen.webp", alt: "Pulse app session start – begin guided breathing exercise" },
+  { src: "/images/inhale-screen.webp", alt: "Pulse app inhale animation – visual breathing guide for anxiety relief" },
 ]
 
 export function ScreenshotSlider() {
@@ -56,15 +56,15 @@ export function ScreenshotSlider() {
       </div>
 
       <div className="relative h-[600px] w-full max-w-5xl mx-auto flex items-center justify-center perspective-1000">
-        {screenshots.map((src, index) => (
+        {screenshots.map((screenshot, index) => (
           <div
             key={index}
             className={cn("absolute transition-all duration-700 ease-in-out w-[280px] h-[580px]", getSlideStyle(index))}
           >
             <div className="relative w-full h-full rounded-[3rem] overflow-hidden border-8 border-surface shadow-2xl bg-background">
               <Image
-                src={src || "/placeholder.svg"}
-                alt={`App Screenshot ${index + 1}`}
+                src={screenshot.src || "/placeholder.svg"}
+                alt={screenshot.alt}
                 fill
                 className="object-contain"
                 priority={index === currentIndex}

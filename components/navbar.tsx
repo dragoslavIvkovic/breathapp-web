@@ -37,7 +37,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-2 group">
           <Image 
             src="/icon.png" 
-            alt="Pulse: Guided Breathing" 
+            alt="Pulse Guided Breathing app icon – iOS breathing exercise app" 
             width={40} 
             height={40} 
             className="rounded-lg group-hover:scale-105 transition-transform"

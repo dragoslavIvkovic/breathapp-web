@@ -53,7 +53,7 @@ export default function Home() {
                 >
                   <Image 
                     src={STORE_BADGES.appStore} 
-                    alt="Download on the App Store" 
+                    alt="Download Pulse Guided Breathing app on the App Store – iOS breathing exercises" 
                     width={140} 
                     height={47}
                     priority
@@ -67,7 +67,7 @@ export default function Home() {
                 >
                   <Image 
                     src={STORE_BADGES.googlePlay} 
-                    alt="Get it on Google Play" 
+                    alt="Get Pulse Guided Breathing on Google Play – Android breathing app" 
                     width={140} 
                     height={47}
                   />
@@ -93,7 +93,7 @@ export default function Home() {
 
             <div className="flex-1 relative w-full max-w-[300px] lg:max-w-md mx-auto">
               <div className="relative z-10 transform rotate-[-5deg] hover:rotate-0 transition-transform duration-500">
-                <PhoneMockup image="/images/welcome-screen.webp" />
+                <PhoneMockup image="/images/welcome-screen.webp" alt="Pulse breathing app welcome screen – guided breathing meditation iOS" />
               </div>
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-primary/20 rounded-full blur-3xl -z-10" />
             </div>
@@ -130,7 +130,7 @@ export default function Home() {
             >
               <Image 
                 src={STORE_BADGES.appStore} 
-                alt="Download on the App Store" 
+                alt="Download Pulse Guided Breathing app on the App Store – iOS breathing exercises" 
                 width={140} 
                 height={47}
               />
@@ -143,7 +143,7 @@ export default function Home() {
             >
               <Image 
                 src={STORE_BADGES.googlePlay} 
-                alt="Get it on Google Play" 
+                alt="Get Pulse Guided Breathing on Google Play – Android breathing app" 
                 width={140} 
                 height={47}
               />

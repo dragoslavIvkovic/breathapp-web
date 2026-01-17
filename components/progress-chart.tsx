@@ -1,6 +1,7 @@
 "use client"
 
-import { Line, LineChart, ResponsiveContainer, XAxis, YAxis, CartesianGrid } from "recharts"
+import { useState, useEffect } from "react"
+import { Line, LineChart, XAxis, YAxis, CartesianGrid } from "recharts"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
 
@@ -15,7 +16,28 @@ const data = [
   { week: "Week 8", calmness: 95, focus: 96, cortisol: 15 },
 ]
 
+const chartConfig = {
+  calmness: {
+    label: "Calmness",
+    color: "#8DC667", // Primary Green
+  },
+  focus: {
+    label: "Focus",
+    color: "#82CFEA", // Secondary Blue
+  },
+  cortisol: {
+    label: "Stress (Cortisol)",
+    color: "#F89E47", // Accent Orange
+  },
+}
+
 export function ProgressChart() {
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+  
   return (
     <section id="features" className="py-20 bg-background relative overflow-hidden">
       <div className="container mx-auto px-4">
@@ -33,39 +55,31 @@ export function ProgressChart() {
               Average user improvement over 8 weeks of daily practice
             </CardDescription>
           </CardHeader>
-          <CardContent>
-            <div className="h-[400px] w-full">
-              <ChartContainer
-                config={{
-                  calmness: {
-                    label: "Calmness",
-                    color: "#8DC667", // Primary Green
-                  },
-                  focus: {
-                    label: "Focus",
-                    color: "#82CFEA", // Secondary Blue
-                  },
-                  cortisol: {
-                    label: "Stress (Cortisol)",
-                    color: "#F89E47", // Accent Orange
-                  },
-                }}
-              >
-                <ResponsiveContainer width="100%" height="100%">
-                  <LineChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 20 }}>
+          <CardContent className="p-3 sm:p-6">
+            <div className="h-[250px] sm:h-[350px] md:h-[400px] w-full">
+              {isMounted && (
+                <ChartContainer
+                  config={chartConfig}
+                  className="w-full h-full"
+                >
+                  <LineChart data={data} margin={{ top: 10, right: 10, left: 0, bottom: 10 }}>
                     <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" vertical={false} />
                     <XAxis
                       dataKey="week"
                       stroke="rgba(255,255,255,0.5)"
                       tickLine={false}
                       axisLine={false}
-                      tickMargin={10}
+                      tickMargin={8}
+                      tick={{ fontSize: 11 }}
+                      tickFormatter={(value) => value.replace('Week ', 'W')}
                     />
                     <YAxis
                       stroke="rgba(255,255,255,0.5)"
                       tickLine={false}
                       axisLine={false}
                       tickFormatter={(value) => `${value}%`}
+                      width={40}
+                      tick={{ fontSize: 11 }}
                     />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Line
@@ -101,8 +115,8 @@ export function ProgressChart() {
                       animationBegin={400}
                     />
                   </LineChart>
-                </ResponsiveContainer>
-              </ChartContainer>
+                </ChartContainer>
+              )}
             </div>
           </CardContent>
         </Card>
