@@ -4,7 +4,7 @@ export const siteConfig = {
   name: "Pulse: Guided Breathing",
   tagline: "Panic Relief & Nervous System Regulation",
   url: "https://breath-app.com",
-  ogImage: "/og-image.png",
+  ogImage: "https://breath-app.com/icon.png", // Absolute URL required for social sharing
   description:
     "Stop panic attacks in 3 minutes with guided breathing exercises. Pulse helps you regulate your nervous system using proven techniques like 4-7-8 breathing, box breathing, and somatic breathwork. Your pocket sanctuary for anxiety relief, better sleep, and mental clarity.",
   keywords: [

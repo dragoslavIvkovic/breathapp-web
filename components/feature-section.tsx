@@ -64,9 +64,14 @@ export function FeatureSection() {
               ))}
             </div>
 
-            <button className="bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-full font-semibold transition-all shadow-lg shadow-accent/20 hover:shadow-accent/40 transform hover:-translate-y-1">
+            <a
+              href="https://apps.apple.com/us/app/pulse-guided-breathing/id6756025823"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-full font-semibold transition-all shadow-lg shadow-accent/20 hover:shadow-accent/40 transform hover:-translate-y-1"
+            >
               Start Tracking Now
-            </button>
+            </a>
           </div>
         </div>
       </div>

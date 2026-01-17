@@ -92,15 +92,18 @@ export function PricingSection() {
                 ))}
               </ul>
 
-              <button
-                className={`w-full py-3 rounded-xl font-semibold transition-all ${
+              <a
+                href="https://apps.apple.com/us/app/pulse-guided-breathing/id6756025823"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`w-full py-3 rounded-xl font-semibold transition-all text-center block ${
                   plan.popular
                     ? "bg-accent hover:bg-accent/90 text-white shadow-lg shadow-accent/20"
                     : "bg-white/10 hover:bg-white/20 text-white border border-white/10"
                 }`}
               >
                 {plan.cta}
-              </button>
+              </a>
             </div>
           ))}
         </div>
